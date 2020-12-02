@@ -13,19 +13,20 @@ float convertToYen(float dollars, const float yen);
 float convertToEuros(float dollars, const float euros);
 float convertToPesos(float dollars, const float pesos);
 
-float dollars;
-const float euros=1.06;
-const float pesos=9.73;
-const float yen=124.35;
-float euros_result, pesos_result, yen_result;
+float dollars = 0;
+const float euros = 1.06;
+const float pesos = 9.73;
+const float yen = 124.35;
+float euros_result = 0;
+float pesos_result = 0;
+float yen_result = 0;
 
 int main ()
 {
     
 	cout << fixed << showpoint << setprecision(2);
     
-	cout << "Please input the amount of American Dollars you want converted " 
-		 << endl;
+	cout << "Please input the amount of American Dollars you want converted " << endl;
 	cout << "to euros and pesos" << endl;
 	cin >> dollars;
 	
@@ -71,8 +72,8 @@ void  convertMulti(float dollars, float& euros, float& pesos)
 	cout << "The function convertMulti with dollars, euros and pesos "
 		 << endl <<" was called with " << dollars <<" dollars" << endl << endl;
     
-    euros=dollars*euros;
-    pesos=dollars*pesos;
+    euros = dollars*euros;
+    pesos = dollars*pesos;
 }
 
 void  convertMulti(float dollars, float& euros, float& pesos, float& yen)
